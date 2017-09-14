@@ -1,20 +1,17 @@
 {
-  "name":           "Zen Audio Player",
-  "version":        "0.1.1",
-  "description":    "Listen to YouTube videos on Zen Audio Player by adding '&zen' or '/zen' to the URL.",
+  "name": "Google Play Music - Quick Search",
+  "version": "0.0.1",
+  "description": "Quickly search through Google Play Music",
   "background": {
-    "persistent": true,
-    "scripts": [ "background.js", "search-extension.js"]
+    "persistent": false,
+    "scripts": [ "search-extension.js"]
   },
   "icons": {
-    "128": "zen-audio-player-128.png"
+    "128": "google-play-music-128.png"
   },
-  "permissions":    [
-    "webRequest",
-    "webRequestBlocking",
-    "*://*.youtube.com/*",
+  "permissions": [
     "tabs"
   ],
-  "omnibox": { "keyword" : "zen" },
+  "omnibox": { "keyword" : "gmusic" },
   "manifest_version": 2
 }

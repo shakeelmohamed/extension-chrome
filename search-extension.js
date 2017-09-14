@@ -13,7 +13,5 @@ function navigate(url) {
 }
 
 chrome.omnibox.onInputEntered.addListener(function(text) {
-    // TODO: lame hack, assume we're doing real search if we find a space
-    var param = text.indexOf(" ") ? "q=" : "v=";
-    navigate("https://zenplayer.audio?" + param + encodeURIComponent(text));
+    navigate("https://play.google.com/music/listen#/sr/" + encodeURIComponent(text));
 });
